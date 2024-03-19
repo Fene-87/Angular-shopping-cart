@@ -1,0 +1,13 @@
+.top-bar {
+    width: auto;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #36454f;
+  }

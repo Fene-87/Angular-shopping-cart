@@ -21,20 +21,6 @@
   font-size: 12px;
 }
 
-.top-bar {
-  width: auto;
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  padding-right: 30px;
-}
-
-.nav-link {
-  text-decoration: none;
-  margin: 0 10px;
-  color: #36454f;
-}
-
 .bottom-bar {
   display: flex;
 }
@@ -48,25 +34,6 @@
   font-size: 16px;
   width: 70%;
   text-align: center;
-}
-
-.search-bar {
-  padding: 0 3vh;
-}
-
-.search-box {
-  width: 170px;
-  height: 33px;
-  border: none;
-  background-color: #efefef;
-  padding: 2px 10px;
-}
-
-.search-btn {
-    width: 33px;
-    height: 33px;
-    border: none;
-    background-color: #efefef;
-    margin-left: -5px;
-    /* padding: 10px 20px; */
+  display: flex;
+  flex-direction: row;
 }

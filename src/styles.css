@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import "~../node_modules/bootstrap/dist/css/bootstrap.min.css"; */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +9,10 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #36454f;
 }
