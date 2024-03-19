@@ -1,0 +1,31 @@
+.search-bar {
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .search-box {
+    width: 40%;
+    height: 5.5vh;
+    border: 1px solid #28282b;
+    border-radius: 2px;
+    outline: none;
+    background-color: #efefef;
+    padding: 1px 10px;
+  }
+  
+  .search-btn {
+      width: 33px;
+      height: 5.5vh;
+      border: 1px solid #28282b;
+      background-color: #28282b;
+      color: #fff;
+      border-radius: 2px;
+      margin-left: -5px;
+      cursor: pointer;
+      /* padding: 10px 20px; */
+  }
+
+.search-result {
+  margin: 20px auto;
+  padding: 10px 140px;
+}

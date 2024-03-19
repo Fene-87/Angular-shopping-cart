@@ -1,0 +1,18 @@
+<div class="products-container">
+    <div class="product-item" *ngFor="let product of products; let i = index">
+        <div class="wishlist">
+            <div class="add-to-wishlist">
+                <i class="far fa-heart" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div>
+            <img [src]="product.imageURL" [alt]="product.slug" class="product-image">
+        </div>
+        <div class="product-price">
+            {{ product.price }}
+        </div>
+        <div class="product-name">{{ product.name }}</div>
+        <div class="product-category">{{ product.gender}} . {{ product.category }} . {{ product.brand }} </div>
+        <div class="available-colors">{{ product.color.length }} Colors . Best Seller</div>
+    </div>
+</div>
