@@ -13,17 +13,25 @@
     padding: 1px 10px;
   }
   
-  .search-btn {
-      width: 33px;
-      height: 5.5vh;
-      border: 1px solid #28282b;
-      background-color: #28282b;
-      color: #fff;
-      border-radius: 2px;
-      margin-left: -5px;
-      cursor: pointer;
-      /* padding: 10px 20px; */
-  }
+.search-btn {
+  width: 33px;
+  height: 5.5vh;
+  border: 1px solid #28282b;
+  background-color: #28282b;
+  color: #fff;
+  border-radius: 2px;
+  margin-left: -5px;
+  cursor: pointer;
+}
+
+.search-disabled {
+  padding: 12px 30px;
+  background-color: #aaa;
+  margin-left: -5px;
+  color: #999;
+  border: 1px solid #28282b;
+  cursor: not-allowed;
+}
 
 .search-result {
   margin: 20px auto;

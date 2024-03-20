@@ -1,9 +1,9 @@
 <div class="search-bar">
     <input type="text" class="search-box" [(ngModel)]="searchText" placeholder="Search">
-    <button class="search-btn">
+    <button [ngClass]="{'search-btn': true, 'search-disabled': !searchText}" [disabled]="!searchText">
         <i class="fa fa fa-search" aria-hidden="true"></i>
     </button>
 </div>
 <div class="search-result">
-    <p><strong>Search result for:</strong> {{ searchText }}</p>
+    <p *ngIf="searchText != ''"><strong>Search result for:</strong> {{ searchText }}</p>
 </div>
