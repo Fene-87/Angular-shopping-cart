@@ -9,7 +9,7 @@
     <div *ngFor="let product of products; let i = index">
       <product-card 
         [product]="product"
-        *ngIf="selectedFilterBtn === 'all' || product.gender === selectedFilterBtn"
+        *ngIf="(selectedFilterBtn === 'all' || product.gender === selectedFilterBtn) && (searchText === '' || product.name.toLowerCase().includes(searchText))"
       ></product-card>
     </div>
 </div>

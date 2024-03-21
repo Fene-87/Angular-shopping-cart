@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { NgIf } from '@angular/common';
 import { NgStyle } from '@angular/common';
@@ -364,6 +364,9 @@ export class ProductListComponent {
   selectedFilterBtn: string = 'all'
 
   onFilterChange(value: string) {
-    this.selectedFilterBtn = value
+    this.selectedFilterBtn = value;
   }
+
+  @Input()
+  searchText: string = '';
 }

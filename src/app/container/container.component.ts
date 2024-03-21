@@ -11,5 +11,11 @@ import { ProductListComponent } from './product-list/product-list.component';
   styleUrl: './container.component.css'
 })
 export class ContainerComponent {
-  listOfString: string[] = ['Mark', 'Sharon', 'John', 'Carol', 'Peter']
+  listOfString: string[] = ['Mark', 'Sharon', 'John', 'Carol', 'Peter'];
+
+  searchText: string = '';
+
+  setSearchText(value: string) {
+    this.searchText = value
+  }
 }
