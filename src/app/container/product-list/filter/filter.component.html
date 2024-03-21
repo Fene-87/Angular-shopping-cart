@@ -1,15 +1,39 @@
 <div class="filter-container">
     <span>Filter: </span>
 
-    <input type="radio" name="filter" value="All">
+    <input 
+      type="radio" 
+      name="filter" 
+      value="all" 
+      [(ngModel)]="selectedFilter"
+      (change)="onSelectedFilterChanged()"
+    >
     <span>{{ 'All (' + all + ')' }}</span>
 
-    <input type="radio" name="filter" value="Men">
+    <input 
+      type="radio" 
+      name="filter" 
+      value="MEN" 
+      [(ngModel)]="selectedFilter"
+      (change)="onSelectedFilterChanged()"
+    >
     <span>{{ 'Men (' + men + ')' }}</span>
 
-    <input type="radio" name="filter" value="Women">
+    <input 
+      type="radio" 
+      name="filter" 
+      value="WOMEN" 
+      [(ngModel)]="selectedFilter"
+      (change)="onSelectedFilterChanged()"
+    >
     <span>{{ 'Women (' + women + ')' }}</span>
 
-    <input type="radio" name="filter" value="Kids">
+    <input 
+      type="radio" 
+      name="filter" 
+      value="KIDS" 
+      [(ngModel)]="selectedFilter"
+      (change)="onSelectedFilterChanged()"
+    >
     <span>{{ 'Kids (' + kids + ')' }}</span>
 </div>

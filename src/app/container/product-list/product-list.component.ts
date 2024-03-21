@@ -360,4 +360,10 @@ export class ProductListComponent {
   menProducts = this.products.filter(p => p.gender === 'MEN').length;
   womenProducts = this.products.filter(p => p.gender === 'WOMEN').length;
   kidsProducts = this.products.filter(p => p.gender === 'KIDS').length;
+
+  selectedFilterBtn: string = 'all'
+
+  onFilterChange(value: string) {
+    this.selectedFilterBtn = value
+  }
 }

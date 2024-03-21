@@ -1,9 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-filter',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './filter.component.html',
   styleUrl: './filter.component.css'
 })
@@ -19,4 +20,13 @@ export class FilterComponent {
 
   @Input()
   kids: number = 0;
+
+  selectedFilter: string = 'all';
+  
+  @Output()
+  selectedFilterChange: EventEmitter<string> = new EventEmitter<string>();
+
+  onSelectedFilterChanged() {
+    this.selectedFilterChange.emit(this.selectedFilter)
+  }
 }
