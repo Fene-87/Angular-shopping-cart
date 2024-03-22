@@ -13,6 +13,7 @@ import { ProductComponent } from './product/product.component';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
+  selectedProduct: any;
   products = [
     {
       id: 1,

@@ -1,13 +1,28 @@
 <div class="search-bar">
-    <input 
+    <!-- Enable two-way data binding. Data changes with every change in input -->
+    <!-- <input 
       type="text" 
       class="search-box" 
       [(ngModel)]="searchText" placeholder="Search"
       (input)="onSearchTextChanged()"
+    > -->
+
+    <!-- Use ngClass to conditionally add class and disable button -->
+    <!-- <button [ngClass]="{'search-btn': true, 'search-disabled': !searchText}" [disabled]="!searchText">
+        <i class="fa fa fa-search" aria-hidden="true"></i>
+    </button> -->
+
+    <input 
+      type="text" 
+      class="search-box" 
+      placeholder="Search"
+      #searchInput
     >
-    <button [ngClass]="{'search-btn': true, 'search-disabled': !searchText}" [disabled]="!searchText">
+
+    <button class="search-btn" (click)="setSearchText(searchInput)">
         <i class="fa fa fa-search" aria-hidden="true"></i>
     </button>
+    
 </div>
 <div class="search-result">
     <p *ngIf="searchText != ''"><strong>Search result for:</strong> {{ searchText }}</p>
