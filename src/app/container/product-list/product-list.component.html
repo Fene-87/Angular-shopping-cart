@@ -6,7 +6,7 @@
   (selectedFilterChange)="onFilterChange($event)"
 ></app-filter>
 <div class="products-container">
-    <div *ngFor="let product of products; let i = index">
+    <div *ngFor="let product of products; let i = index" (click)="selectedProduct = product">
       <product-card 
         [product]="product"
         *ngIf="(selectedFilterBtn === 'all' || product.gender === selectedFilterBtn) && (searchText === '' || product.name.toLowerCase().includes(searchText))"

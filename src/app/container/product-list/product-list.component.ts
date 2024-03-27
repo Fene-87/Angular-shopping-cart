@@ -4,6 +4,7 @@ import { NgIf } from '@angular/common';
 import { NgStyle } from '@angular/common';
 import { FilterComponent } from './filter/filter.component';
 import { ProductComponent } from './product/product.component';
+import { Product } from '../../Models/Product';
 
 @Component({
   selector: 'product-list',
@@ -13,7 +14,7 @@ import { ProductComponent } from './product/product.component';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
-  selectedProduct: any;
+  selectedProduct!: Product;
   products = [
     {
       id: 1,

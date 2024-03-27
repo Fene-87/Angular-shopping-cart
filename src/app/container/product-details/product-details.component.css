@@ -1,0 +1,127 @@
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 5;
+  cursor: pointer;
+}
+
+.product-details-section{
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  transition: 1s;
+  width: 480px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 25px;
+}
+
+.product-detail-close{
+  text-align: right;
+  color:#28282B;
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 5px 0px;
+}
+
+.product-detail-image{
+  width: 100%;
+  height: 320px;
+}
+
+.product-detail{
+  padding: 10px 0px;
+}
+
+.product-detail-gbc{
+  margin: 20px 0px;
+}
+
+.product-detail-gbc > span{
+  background-color: #36454F;
+  margin-left: 0px;
+  padding: 5px 20px;
+  font-size: 14px;
+  color: white;
+}
+
+.product-detail-name{
+  margin: 20px auto;
+}
+
+.product-detail-price{
+  font-size: 14px;
+  margin:30px 0px;
+  padding: 25px 10px;
+  background-color: #FCF55F;
+  border:#FFC000 2px solid;
+  border-radius: 5px;
+}
+
+.product-detail-size{
+  margin: 30px 0px;
+}
+
+span{
+  padding: 5px 10px;
+  margin: 5px 5px;
+  border-radius: 5px;
+}
+
+.product-detail-available-size{
+  margin: 0px 0px;
+  background-color: #28282B; 
+  color:white;
+  border-radius: 0px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.product-detail-available-color{
+  border: 1px solid #d3d3d3;
+  border-radius: 50%;
+  padding: 8px 18px;
+}
+
+.product-detail-desc{
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.product-detail-addtoCart{
+  margin: 20px 0px;
+}
+
+.btn-add-to-cart{
+  border: none;
+  background-color: #28282B;
+  padding: 10px 30px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.scroll {
+  overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+   width:5px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius:5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  border-radius:5px;
+  -webkit-box-shadow: inset 0 0 6px #28282B; 
+}

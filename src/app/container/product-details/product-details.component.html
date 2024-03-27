@@ -1,0 +1,60 @@
+<div class="product-details-section scroll">
+    <div class="product-detail-close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <div class="product-detail-image">
+        <img [src]="product?.imageURL" class="product-detail-image">
+    </div>
+    
+    <div class="product-detail">
+        <div class="product-detail-name">
+            <h2>{{ product?.name }}</h2>
+        </div>
+        <div class="product-detail-gbc">
+            <span>{{ product?.gender }}</span>
+            <span>{{ product?.brand }}</span>
+            <span>{{ product?.category }}</span>
+        </div>
+        <div class="product-detail-price">
+            <p>
+                <b>Price Each Pair:</b>
+                <span *ngIf="product?.discountPrice" style="background-color: red; color:white"><s>${{ product?.price }}</s></span>
+                <span style="background-color: green; color:white">${{ product?.discountPrice ? product?.discountPrice : product?.price }}</span> (Inclusive of all taxes)
+            </p>
+        </div>
+        <div class="product-detail-size">
+            <div style="padding: 5px 0px;border-bottom: #ccc 2px solid">
+                <h4>Available Size</h4>
+            </div>
+            <diV style="margin-top: 20px">
+                <span class="product-detail-available-size" *ngFor="let size of product?.size; let i = index">{{ size }}</span>
+            </diV>                
+        </div>
+
+        <div class="product-detail-color">
+            <div style="padding: 5px 0px;border-bottom: #ccc 2px solid">
+                <h4>Available Color</h4>
+            </div>
+            <diV style="margin-top: 20px;">
+                <span 
+                  *ngFor="let color of product?.color; let i = index" 
+                  class="product-detail-available-color" 
+                  [ngStyle]="{'background-color': color}">
+                </span>
+            </diV>                
+        </div>
+
+        <div class="product-detail-desc">
+            <div style="padding: 5px 0px;border-bottom: #ccc 2px solid">
+                <h4>Product Description</h4>
+            </div>
+            <div style="margin-top: 20px">
+                <p>{{ product?.description }}</p>
+            </div>                
+        </div>
+    </div>
+    <div class="product-detail-addtoCart">
+        <button class="btn-add-to-cart">ADD TO CART</button>
+    </div>
+</div>
+<div class="overlay"></div>
