@@ -3,11 +3,12 @@ import { SearchComponent } from './search/search.component';
 import { NgFor, NgIf } from '@angular/common';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { CartComponent } from './cart/cart.component';
 
 @Component({
   selector: 'container',
   standalone: true,
-  imports: [SearchComponent, NgFor, ProductListComponent, ProductDetailsComponent, NgIf],
+  imports: [SearchComponent, NgFor, ProductListComponent, ProductDetailsComponent, NgIf, CartComponent],
   templateUrl: './container.component.html',
   styleUrl: './container.component.css'
 })

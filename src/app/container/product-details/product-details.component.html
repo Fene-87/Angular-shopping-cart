@@ -39,7 +39,7 @@
                 <span 
                   *ngFor="let color of product?.color; let i = index" 
                   class="product-detail-available-color" 
-                  [ngStyle]="{'background-color': color}">
+                  [ngStyle]="{'background-color': color, 'border': color === 'White' ? '1px solid #d3d3d3' : 'none'}">
                 </span>
             </diV>                
         </div>
